@@ -21,28 +21,26 @@ class NavigationCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       child: Card(
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(4.0),
-                child: Text(
-                  label,
-                  style: Theme.of(context).textTheme.bodyLarge,
-                ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(4.0),
+              child: Text(
+                label,
+                style: Theme.of(context).textTheme.bodyLarge,
               ),
-              Padding(
-                padding: const EdgeInsets.all(4.0),
-                child: Icon(
-                  icon,
-                  color: Colors.white,
-                  size: 45,
-                ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(4.0),
+              child: Icon(
+                icon,
+                color: Colors.white,
+                size: 45,
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
       onTap: () {
