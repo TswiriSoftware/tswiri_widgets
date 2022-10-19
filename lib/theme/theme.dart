@@ -3,6 +3,8 @@ import 'package:tswiri_widgets/colors/colors.dart';
 
 ///Sunbird Theme.
 ThemeData tswiriTheme = ThemeData(
+  useMaterial3: true,
+
   brightness: Brightness.dark,
   backgroundColor: Colors.black,
   primaryColor: tswiriOrange,
