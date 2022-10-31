@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tswiri_widgets/transitions/left_to_right_transitions.dart';
 
 class NavigationCard extends StatelessWidget {
   ///Default Navigator Card.
@@ -47,8 +48,7 @@ class NavigationCard extends StatelessWidget {
         ),
       ),
       onTap: () {
-        Navigator.push(
-            context, MaterialPageRoute(builder: (context) => viewPage));
+        Navigator.push(context, scaleTransition(viewPage));
       },
     );
   }

@@ -14,33 +14,36 @@ class NewContainerCard extends StatelessWidget {
     return InkWell(
       onTap: onTap,
       child: Card(
-        shape: RoundedRectangleBorder(
-          side: const BorderSide(
-            color: tswiriOrange,
-            width: 0.5,
+        child: ListTile(
+          title: Text(
+            'New Container',
+            style: Theme.of(context).textTheme.bodyLarge,
+            // textAlign: TextAlign.center,
           ),
-          borderRadius: BorderRadius.circular(10),
+
+          trailing: IconButton(onPressed: () {}, icon: Icon(Icons.add)),
+          // leading: IconButton(onPressed: () {}, icon: Icon(Icons.add)),
         ),
-        child: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Column(
-                children: [
-                  Text(
-                    '+',
-                    style: Theme.of(context).textTheme.bodyMedium,
-                  ),
-                  Text(
-                    '(New Container)',
-                    style: Theme.of(context).textTheme.bodySmall,
-                  ),
-                ],
-              ),
-            ],
-          ),
-        ),
+        // child: Padding(
+        //   padding: const EdgeInsets.all(8.0),
+        //   child: Row(
+        //     mainAxisAlignment: MainAxisAlignment.center,
+        //     children: [
+        //       Column(
+        //         children: [
+        //           Text(
+        //             '+',
+        //             style: Theme.of(context).textTheme.bodyMedium,
+        //           ),
+        //           Text(
+        //             '(New Container)',
+        //             style: Theme.of(context).textTheme.bodySmall,
+        //           ),
+        //         ],
+        //       ),
+        //     ],
+        //   ),
+        // ),
       ),
     );
   }

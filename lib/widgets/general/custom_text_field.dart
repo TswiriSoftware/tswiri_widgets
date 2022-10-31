@@ -57,10 +57,12 @@ class _CustomTextFieldState extends State<CustomTextField> {
         textCapitalization: TextCapitalization.sentences,
         maxLines: widget.maxLines ?? 1,
         keyboardType: widget.textInputType,
+        style: Theme.of(context).textTheme.subtitle2,
         decoration: InputDecoration(
           filled: true,
           fillColor: widget.backgroundColor,
-          contentPadding: const EdgeInsets.symmetric(horizontal: 10),
+          contentPadding:
+              const EdgeInsets.symmetric(horizontal: 10, vertical: 18),
           labelText: widget.label,
           labelStyle: const TextStyle(fontSize: 15, color: Colors.white),
           border: OutlineInputBorder(

@@ -29,7 +29,7 @@ class TswiriFilterChip extends StatelessWidget {
         ),
         onSelected: onSelected,
         selected: selected,
-        selectedColor: color,
+        // selectedColor: color,
         tooltip: toolTip,
         shape: StadiumBorder(
           side: BorderSide(
