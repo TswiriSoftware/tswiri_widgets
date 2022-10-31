@@ -10,14 +10,14 @@ ThemeData tswiriTheme = ThemeData(
   //ColorScheme.
   colorScheme: ColorScheme.fromSwatch(
     primarySwatch: tswiriOrange,
-    accentColor: background[400],
+    accentColor: backgroundM2[400],
     brightness: Brightness.dark,
     backgroundColor: Colors.black,
   ),
 
   //AppBar Theme.
   appBarTheme: const AppBarTheme(
-    backgroundColor: background,
+    backgroundColor: backgroundM2,
     elevation: 10,
   ),
 
@@ -27,7 +27,7 @@ ThemeData tswiriTheme = ThemeData(
   ),
 
   //Scaffold Background Color.
-  scaffoldBackgroundColor: background[800],
+  scaffoldBackgroundColor: backgroundM2[800],
 
   //Button Theme.
   buttonTheme: const ButtonThemeData(
@@ -46,7 +46,7 @@ ThemeData tswiriTheme = ThemeData(
 
   //Card Theme.
   cardTheme: CardTheme(
-    color: background[400],
+    color: backgroundM2[400],
     elevation: 10,
     margin: const EdgeInsets.all(8),
     shape: RoundedRectangleBorder(
@@ -137,7 +137,7 @@ ThemeData tswiriTheme = ThemeData(
 
   //Chip Theme.
   chipTheme: ChipThemeData(
-    backgroundColor: background[300],
+    backgroundColor: backgroundM2[300],
     selectedColor: tswiriOrange,
     shape: const StadiumBorder(
       side: BorderSide(

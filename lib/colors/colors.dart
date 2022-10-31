@@ -18,7 +18,7 @@ const MaterialColor tswiriOrange = MaterialColor(
 );
 const int _sunbirdOrangePrimaryValue = 0xFFFF2400;
 
-const MaterialColor background = MaterialColor(
+const MaterialColor backgroundM2 = MaterialColor(
   _backgroundPrimaryValue,
   <int, Color>{
     50: Color(0xFFE4E4E4),
